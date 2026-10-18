@@ -1,0 +1,512 @@
+Base:
+  model_root: "outputs/checkpoints"
+  dataset_id: "Criteo_x4_NumEmbRaw"
+  task: "binary_classification"
+  loss: "binary_crossentropy"
+  optimizer: "adam"
+  learning_rate: 0.001
+  batch_size: 4096
+  embedding_dim: 16
+  epochs: 100
+  early_stop_patience: 2
+  monitor: "AUC"
+  monitor_mode: "max"
+  metrics: ["AUC","logloss"]
+  eval_steps: null
+  shuffle: true
+  data_format: "parquet"
+  streaming: false
+  seed: 2026
+  num_workers: 3
+  verbose: 1
+  debug_mode: false
+  save_best_only: true
+  pickle_feature_encoder: false
+  feature_config: null
+  feature_specs: null
+  use_features: null
+  group_id: null
+  batch_norm: false
+  net_dropout: 0
+  embedding_regularizer: 0
+  net_regularizer: 0
+  hidden_units: [256,128,64]
+  dnn_hidden_units: [256,128,64]
+  hidden_activations: "relu"
+  dnn_activations: "relu"
+  parallel_dnn_hidden_units: [256,128,64]
+  stacked_dnn_hidden_units: [256,128,64]
+  model_structure: "parallel"
+  num_cross_layers: 3
+  use_low_rank_mixture: false
+  lr_use_shared_numeric_embedding: true
+  numeric_embedding_apply_to_linear: false
+  numeric_embedding_plugins: ["numemb_plugin"]
+ScalarLens_DNN:
+  model: "DNN"
+  numeric_embedding: "scalarlens"
+  numeric_embedding_params:
+    n_bins: 16
+    boundary_scheme: "quantile"
+    min_width: 0.0001
+    width_temperature: 1
+    embedding_init_std: 0.0001
+    modes_per_field: 8
+    coupling_rank: 16
+    n_steps: 3
+    mode_hidden_dim: 32
+    readout_hidden_dim: 32
+    norm_eps: 1e-8
+    coupling_mode: "joint"
+    validate_inputs: true
+    context_features: null
+DEER_DNN:
+  model: "DNN"
+  numeric_embedding: "deer"
+  numeric_embedding_params:
+    n_bins: 16
+    boundary_scheme: "quantile"
+    min_width: 0.0001
+    width_temperature: 1
+DAES_DNN:
+  model: "DNN"
+  numeric_embedding: "daes_gate"
+  numeric_embedding_params:
+    n_meta_embeddings: 10
+    reservoir_size: 100000
+    beta: 0.5
+    n_context_fields: 3
+    quantile_refresh_interval: 100
+    embedding_init_std: 0.0001
+NaryDis_DNN:
+  model: "DNN"
+  numeric_embedding: "narydis_full"
+  numeric_embedding_params:
+    bases: [2,3,5,7,10]
+    max_digits: 12
+    multiplier: 100
+    signed: true
+    temperature: 1
+    min_temperature: 0.1
+    temperature_decay: 0.00005
+    attention_hidden_dims: [80,40]
+    ssl_hidden_dim: 64
+    ssl_temperature: 0.1
+    ssl_weight: 0.1
+    ssl_max_samples: 512
+ScalarLens_DeepFM:
+  model: "DeepFM"
+  numeric_embedding: "scalarlens"
+  numeric_embedding_params:
+    n_bins: 16
+    boundary_scheme: "quantile"
+    min_width: 0.0001
+    width_temperature: 1
+    embedding_init_std: 0.0001
+    modes_per_field: 8
+    coupling_rank: 16
+    n_steps: 3
+    mode_hidden_dim: 32
+    readout_hidden_dim: 32
+    norm_eps: 1e-8
+    coupling_mode: "joint"
+    validate_inputs: true
+    context_features: null
+DEER_DeepFM:
+  model: "DeepFM"
+  numeric_embedding: "deer"
+  numeric_embedding_params:
+    n_bins: 16
+    boundary_scheme: "quantile"
+    min_width: 0.0001
+    width_temperature: 1
+DAES_DeepFM:
+  model: "DeepFM"
+  numeric_embedding: "daes_gate"
+  numeric_embedding_params:
+    n_meta_embeddings: 10
+    reservoir_size: 100000
+    beta: 0.5
+    n_context_fields: 3
+    quantile_refresh_interval: 100
+    embedding_init_std: 0.0001
+NaryDis_DeepFM:
+  model: "DeepFM"
+  numeric_embedding: "narydis_full"
+  numeric_embedding_params:
+    bases: [2,3,5,7,10]
+    max_digits: 12
+    multiplier: 100
+    signed: true
+    temperature: 1
+    min_temperature: 0.1
+    temperature_decay: 0.00005
+    attention_hidden_dims: [80,40]
+    ssl_hidden_dim: 64
+    ssl_temperature: 0.1
+    ssl_weight: 0.1
+    ssl_max_samples: 512
+ScalarLens_WideDeep:
+  model: "WideDeep"
+  numeric_embedding: "scalarlens"
+  numeric_embedding_params:
+    n_bins: 16
+    boundary_scheme: "quantile"
+    min_width: 0.0001
+    width_temperature: 1
+    embedding_init_std: 0.0001
+    modes_per_field: 8
+    coupling_rank: 16
+    n_steps: 3
+    mode_hidden_dim: 32
+    readout_hidden_dim: 32
+    norm_eps: 1e-8
+    coupling_mode: "joint"
+    validate_inputs: true
+    context_features: null
+DEER_WideDeep:
+  model: "WideDeep"
+  numeric_embedding: "deer"
+  numeric_embedding_params:
+    n_bins: 16
+    boundary_scheme: "quantile"
+    min_width: 0.0001
+    width_temperature: 1
+DAES_WideDeep:
+  model: "WideDeep"
+  numeric_embedding: "daes_gate"
+  numeric_embedding_params:
+    n_meta_embeddings: 10
+    reservoir_size: 100000
+    beta: 0.5
+    n_context_fields: 3
+    quantile_refresh_interval: 100
+    embedding_init_std: 0.0001
+NaryDis_WideDeep:
+  model: "WideDeep"
+  numeric_embedding: "narydis_full"
+  numeric_embedding_params:
+    bases: [2,3,5,7,10]
+    max_digits: 12
+    multiplier: 100
+    signed: true
+    temperature: 1
+    min_temperature: 0.1
+    temperature_decay: 0.00005
+    attention_hidden_dims: [80,40]
+    ssl_hidden_dim: 64
+    ssl_temperature: 0.1
+    ssl_weight: 0.1
+    ssl_max_samples: 512
+ScalarLens_NFM:
+  model: "NFM"
+  numeric_embedding: "scalarlens"
+  numeric_embedding_params:
+    n_bins: 16
+    boundary_scheme: "quantile"
+    min_width: 0.0001
+    width_temperature: 1
+    embedding_init_std: 0.0001
+    modes_per_field: 8
+    coupling_rank: 16
+    n_steps: 3
+    mode_hidden_dim: 32
+    readout_hidden_dim: 32
+    norm_eps: 1e-8
+    coupling_mode: "joint"
+    validate_inputs: true
+    context_features: null
+DEER_NFM:
+  model: "NFM"
+  numeric_embedding: "deer"
+  numeric_embedding_params:
+    n_bins: 16
+    boundary_scheme: "quantile"
+    min_width: 0.0001
+    width_temperature: 1
+DAES_NFM:
+  model: "NFM"
+  numeric_embedding: "daes_gate"
+  numeric_embedding_params:
+    n_meta_embeddings: 10
+    reservoir_size: 100000
+    beta: 0.5
+    n_context_fields: 3
+    quantile_refresh_interval: 100
+    embedding_init_std: 0.0001
+NaryDis_NFM:
+  model: "NFM"
+  numeric_embedding: "narydis_full"
+  numeric_embedding_params:
+    bases: [2,3,5,7,10]
+    max_digits: 12
+    multiplier: 100
+    signed: true
+    temperature: 1
+    min_temperature: 0.1
+    temperature_decay: 0.00005
+    attention_hidden_dims: [80,40]
+    ssl_hidden_dim: 64
+    ssl_temperature: 0.1
+    ssl_weight: 0.1
+    ssl_max_samples: 512
+ScalarLens_PNN:
+  model: "PNN"
+  numeric_embedding: "scalarlens"
+  numeric_embedding_params:
+    n_bins: 16
+    boundary_scheme: "quantile"
+    min_width: 0.0001
+    width_temperature: 1
+    embedding_init_std: 0.0001
+    modes_per_field: 8
+    coupling_rank: 16
+    n_steps: 3
+    mode_hidden_dim: 32
+    readout_hidden_dim: 32
+    norm_eps: 1e-8
+    coupling_mode: "joint"
+    validate_inputs: true
+    context_features: null
+DEER_PNN:
+  model: "PNN"
+  numeric_embedding: "deer"
+  numeric_embedding_params:
+    n_bins: 16
+    boundary_scheme: "quantile"
+    min_width: 0.0001
+    width_temperature: 1
+DAES_PNN:
+  model: "PNN"
+  numeric_embedding: "daes_gate"
+  numeric_embedding_params:
+    n_meta_embeddings: 10
+    reservoir_size: 100000
+    beta: 0.5
+    n_context_fields: 3
+    quantile_refresh_interval: 100
+    embedding_init_std: 0.0001
+NaryDis_PNN:
+  model: "PNN"
+  numeric_embedding: "narydis_full"
+  numeric_embedding_params:
+    bases: [2,3,5,7,10]
+    max_digits: 12
+    multiplier: 100
+    signed: true
+    temperature: 1
+    min_temperature: 0.1
+    temperature_decay: 0.00005
+    attention_hidden_dims: [80,40]
+    ssl_hidden_dim: 64
+    ssl_temperature: 0.1
+    ssl_weight: 0.1
+    ssl_max_samples: 512
+ScalarLens_DCN:
+  model: "DCN"
+  numeric_embedding: "scalarlens"
+  numeric_embedding_params:
+    n_bins: 16
+    boundary_scheme: "quantile"
+    min_width: 0.0001
+    width_temperature: 1
+    embedding_init_std: 0.0001
+    modes_per_field: 8
+    coupling_rank: 16
+    n_steps: 3
+    mode_hidden_dim: 32
+    readout_hidden_dim: 32
+    norm_eps: 1e-8
+    coupling_mode: "joint"
+    validate_inputs: true
+    context_features: null
+DEER_DCN:
+  model: "DCN"
+  numeric_embedding: "deer"
+  numeric_embedding_params:
+    n_bins: 16
+    boundary_scheme: "quantile"
+    min_width: 0.0001
+    width_temperature: 1
+DAES_DCN:
+  model: "DCN"
+  numeric_embedding: "daes_gate"
+  numeric_embedding_params:
+    n_meta_embeddings: 10
+    reservoir_size: 100000
+    beta: 0.5
+    n_context_fields: 3
+    quantile_refresh_interval: 100
+    embedding_init_std: 0.0001
+NaryDis_DCN:
+  model: "DCN"
+  numeric_embedding: "narydis_full"
+  numeric_embedding_params:
+    bases: [2,3,5,7,10]
+    max_digits: 12
+    multiplier: 100
+    signed: true
+    temperature: 1
+    min_temperature: 0.1
+    temperature_decay: 0.00005
+    attention_hidden_dims: [80,40]
+    ssl_hidden_dim: 64
+    ssl_temperature: 0.1
+    ssl_weight: 0.1
+    ssl_max_samples: 512
+ScalarLens_DCNv2:
+  model: "DCNv2"
+  numeric_embedding: "scalarlens"
+  numeric_embedding_params:
+    n_bins: 16
+    boundary_scheme: "quantile"
+    min_width: 0.0001
+    width_temperature: 1
+    embedding_init_std: 0.0001
+    modes_per_field: 8
+    coupling_rank: 16
+    n_steps: 3
+    mode_hidden_dim: 32
+    readout_hidden_dim: 32
+    norm_eps: 1e-8
+    coupling_mode: "joint"
+    validate_inputs: true
+    context_features: null
+DEER_DCNv2:
+  model: "DCNv2"
+  numeric_embedding: "deer"
+  numeric_embedding_params:
+    n_bins: 16
+    boundary_scheme: "quantile"
+    min_width: 0.0001
+    width_temperature: 1
+DAES_DCNv2:
+  model: "DCNv2"
+  numeric_embedding: "daes_gate"
+  numeric_embedding_params:
+    n_meta_embeddings: 10
+    reservoir_size: 100000
+    beta: 0.5
+    n_context_fields: 3
+    quantile_refresh_interval: 100
+    embedding_init_std: 0.0001
+NaryDis_DCNv2:
+  model: "DCNv2"
+  numeric_embedding: "narydis_full"
+  numeric_embedding_params:
+    bases: [2,3,5,7,10]
+    max_digits: 12
+    multiplier: 100
+    signed: true
+    temperature: 1
+    min_temperature: 0.1
+    temperature_decay: 0.00005
+    attention_hidden_dims: [80,40]
+    ssl_hidden_dim: 64
+    ssl_temperature: 0.1
+    ssl_weight: 0.1
+    ssl_max_samples: 512
+ScalarLens_AutoInt:
+  model: "AutoInt"
+  numeric_embedding: "scalarlens"
+  numeric_embedding_params:
+    n_bins: 16
+    boundary_scheme: "quantile"
+    min_width: 0.0001
+    width_temperature: 1
+    embedding_init_std: 0.0001
+    modes_per_field: 8
+    coupling_rank: 16
+    n_steps: 3
+    mode_hidden_dim: 32
+    readout_hidden_dim: 32
+    norm_eps: 1e-8
+    coupling_mode: "joint"
+    validate_inputs: true
+    context_features: null
+DEER_AutoInt:
+  model: "AutoInt"
+  numeric_embedding: "deer"
+  numeric_embedding_params:
+    n_bins: 16
+    boundary_scheme: "quantile"
+    min_width: 0.0001
+    width_temperature: 1
+DAES_AutoInt:
+  model: "AutoInt"
+  numeric_embedding: "daes_gate"
+  numeric_embedding_params:
+    n_meta_embeddings: 10
+    reservoir_size: 100000
+    beta: 0.5
+    n_context_fields: 3
+    quantile_refresh_interval: 100
+    embedding_init_std: 0.0001
+NaryDis_AutoInt:
+  model: "AutoInt"
+  numeric_embedding: "narydis_full"
+  numeric_embedding_params:
+    bases: [2,3,5,7,10]
+    max_digits: 12
+    multiplier: 100
+    signed: true
+    temperature: 1
+    min_temperature: 0.1
+    temperature_decay: 0.00005
+    attention_hidden_dims: [80,40]
+    ssl_hidden_dim: 64
+    ssl_temperature: 0.1
+    ssl_weight: 0.1
+    ssl_max_samples: 512
+ScalarLens_FiBiNET:
+  model: "FiBiNET"
+  numeric_embedding: "scalarlens"
+  numeric_embedding_params:
+    n_bins: 16
+    boundary_scheme: "quantile"
+    min_width: 0.0001
+    width_temperature: 1
+    embedding_init_std: 0.0001
+    modes_per_field: 8
+    coupling_rank: 16
+    n_steps: 3
+    mode_hidden_dim: 32
+    readout_hidden_dim: 32
+    norm_eps: 1e-8
+    coupling_mode: "joint"
+    validate_inputs: true
+    context_features: null
+DEER_FiBiNET:
+  model: "FiBiNET"
+  numeric_embedding: "deer"
+  numeric_embedding_params:
+    n_bins: 16
+    boundary_scheme: "quantile"
+    min_width: 0.0001
+    width_temperature: 1
+DAES_FiBiNET:
+  model: "FiBiNET"
+  numeric_embedding: "daes_gate"
+  numeric_embedding_params:
+    n_meta_embeddings: 10
+    reservoir_size: 100000
+    beta: 0.5
+    n_context_fields: 3
+    quantile_refresh_interval: 100
+    embedding_init_std: 0.0001
+NaryDis_FiBiNET:
+  model: "FiBiNET"
+  numeric_embedding: "narydis_full"
+  numeric_embedding_params:
+    bases: [2,3,5,7,10]
+    max_digits: 12
+    multiplier: 100
+    signed: true
+    temperature: 1
+    min_temperature: 0.1
+    temperature_decay: 0.00005
+    attention_hidden_dims: [80,40]
+    ssl_hidden_dim: 64
+    ssl_temperature: 0.1
+    ssl_weight: 0.1
+    ssl_max_samples: 512

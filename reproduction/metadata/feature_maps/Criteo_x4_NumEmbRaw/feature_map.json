@@ -1,0 +1,555 @@
+{
+  "dataset_id": "Criteo_x4_NumEmbRaw",
+  "num_fields": 39,
+  "total_features": 909739,
+  "input_length": 39,
+  "labels": [
+    "Label"
+  ],
+  "features": [
+    {
+      "I1": {
+        "source": "dense",
+        "type": "numeric",
+        "numeric_pre_transform": "identity",
+        "numeric_missing_value": 0,
+        "numeric_storage_dtype": "int64",
+        "numeric_mean": 1.9136534295609517,
+        "numeric_std": 7.212034318009419,
+        "numeric_min": 0,
+        "numeric_max": 5775,
+        "numeric_bin_edges": [
+          0.0,
+          1.0,
+          2.0,
+          4.0,
+          8.0,
+          5775.0
+        ]
+      }
+    },
+    {
+      "I2": {
+        "source": "dense",
+        "type": "numeric",
+        "numeric_pre_transform": "identity",
+        "numeric_missing_value": 0,
+        "numeric_storage_dtype": "int64",
+        "numeric_mean": 105.85545378657513,
+        "numeric_std": 391.7044627434023,
+        "numeric_min": -3,
+        "numeric_max": 257675,
+        "numeric_bin_edges": [
+          -3.0,
+          -1.0,
+          0.0,
+          1.0,
+          2.0,
+          3.0,
+          6.0,
+          11.0,
+          20.0,
+          35.0,
+          63.0,
+          136.0,
+          377.0,
+          257675.0
+        ]
+      }
+    },
+    {
+      "I3": {
+        "source": "dense",
+        "type": "numeric",
+        "numeric_pre_transform": "identity",
+        "numeric_missing_value": 0,
+        "numeric_storage_dtype": "int64",
+        "numeric_mean": 21.144510219144358,
+        "numeric_std": 353.38101872175463,
+        "numeric_min": 0,
+        "numeric_max": 65535,
+        "numeric_bin_edges": [
+          0.0,
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          5.0,
+          7.0,
+          9.0,
+          13.0,
+          19.0,
+          29.0,
+          53.0,
+          65535.0
+        ]
+      }
+    },
+    {
+      "I4": {
+        "source": "dense",
+        "type": "numeric",
+        "numeric_pre_transform": "identity",
+        "numeric_missing_value": 0,
+        "numeric_storage_dtype": "int64",
+        "numeric_mean": 5.73460699822071,
+        "numeric_std": 8.349420246910276,
+        "numeric_min": 0,
+        "numeric_max": 969,
+        "numeric_bin_edges": [
+          0.0,
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          6.0,
+          7.0,
+          10.0,
+          14.0,
+          21.0,
+          969.0
+        ]
+      }
+    },
+    {
+      "I5": {
+        "source": "dense",
+        "type": "numeric",
+        "numeric_pre_transform": "identity",
+        "numeric_missing_value": 0,
+        "numeric_storage_dtype": "int64",
+        "numeric_mean": 18064.181844604893,
+        "numeric_std": 68583.98794588548,
+        "numeric_min": 0,
+        "numeric_max": 23159456,
+        "numeric_bin_edges": [
+          0.0,
+          1.0,
+          11.0,
+          59.0,
+          226.0,
+          776.0,
+          1297.0,
+          1591.0,
+          2691.0,
+          3679.0,
+          5158.0,
+          7128.0,
+          9979.0,
+          14718.0,
+          25889.0,
+          43866.0,
+          23159456.0
+        ]
+      }
+    },
+    {
+      "I6": {
+        "source": "dense",
+        "type": "numeric",
+        "numeric_pre_transform": "identity",
+        "numeric_missing_value": 0,
+        "numeric_storage_dtype": "int64",
+        "numeric_mean": 90.08696559025861,
+        "numeric_std": 341.7358604464742,
+        "numeric_min": 0,
+        "numeric_max": 431037,
+        "numeric_bin_edges": [
+          0.0,
+          2.0,
+          5.0,
+          10.0,
+          16.0,
+          24.0,
+          35.0,
+          50.0,
+          72.0,
+          107.0,
+          172.0,
+          328.0,
+          431037.0
+        ]
+      }
+    },
+    {
+      "I7": {
+        "source": "dense",
+        "type": "numeric",
+        "numeric_pre_transform": "identity",
+        "numeric_missing_value": 0,
+        "numeric_storage_dtype": "int64",
+        "numeric_mean": 15.620719404050332,
+        "numeric_std": 64.61729978257914,
+        "numeric_min": 0,
+        "numeric_max": 56311,
+        "numeric_bin_edges": [
+          0.0,
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          6.0,
+          8.0,
+          11.0,
+          16.0,
+          26.0,
+          51.0,
+          56311.0
+        ]
+      }
+    },
+    {
+      "I8": {
+        "source": "dense",
+        "type": "numeric",
+        "numeric_pre_transform": "identity",
+        "numeric_missing_value": 0,
+        "numeric_storage_dtype": "int64",
+        "numeric_mean": 12.510689769577432,
+        "numeric_std": 16.696493891141046,
+        "numeric_min": 0,
+        "numeric_max": 5838,
+        "numeric_bin_edges": [
+          0.0,
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          6.0,
+          7.0,
+          9.0,
+          12.0,
+          15.0,
+          19.0,
+          24.0,
+          31.0,
+          40.0,
+          5838.0
+        ]
+      }
+    },
+    {
+      "I9": {
+        "source": "dense",
+        "type": "numeric",
+        "numeric_pre_transform": "identity",
+        "numeric_missing_value": 0,
+        "numeric_storage_dtype": "int64",
+        "numeric_mean": 101.51797023998341,
+        "numeric_std": 216.6050585283037,
+        "numeric_min": 0,
+        "numeric_max": 25618,
+        "numeric_bin_edges": [
+          0.0,
+          2.0,
+          4.0,
+          8.0,
+          13.0,
+          19.0,
+          26.0,
+          35.0,
+          46.0,
+          60.0,
+          77.0,
+          104.0,
+          143.0,
+          211.0,
+          361.0,
+          25618.0
+        ]
+      }
+    },
+    {
+      "I10": {
+        "source": "dense",
+        "type": "numeric",
+        "numeric_pre_transform": "identity",
+        "numeric_missing_value": 0,
+        "numeric_storage_dtype": "int64",
+        "numeric_mean": 0.33743667222187484,
+        "numeric_std": 0.5917504950900319,
+        "numeric_min": 0,
+        "numeric_max": 11,
+        "numeric_bin_edges": [
+          0.0,
+          1.0,
+          11.0
+        ]
+      }
+    },
+    {
+      "I11": {
+        "source": "dense",
+        "type": "numeric",
+        "numeric_pre_transform": "identity",
+        "numeric_missing_value": 0,
+        "numeric_storage_dtype": "int64",
+        "numeric_mean": 2.6144489822385406,
+        "numeric_std": 5.114254893178836,
+        "numeric_min": 0,
+        "numeric_max": 231,
+        "numeric_bin_edges": [
+          0.0,
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          5.0,
+          9.0,
+          231.0
+        ]
+      }
+    },
+    {
+      "I12": {
+        "source": "dense",
+        "type": "numeric",
+        "numeric_pre_transform": "identity",
+        "numeric_missing_value": 0,
+        "numeric_storage_dtype": "int64",
+        "numeric_mean": 0.23330063761959133,
+        "numeric_std": 2.769002547613981,
+        "numeric_min": 0,
+        "numeric_max": 4008,
+        "numeric_bin_edges": [
+          0.0,
+          4008.0
+        ]
+      }
+    },
+    {
+      "I13": {
+        "source": "dense",
+        "type": "numeric",
+        "numeric_pre_transform": "identity",
+        "numeric_missing_value": 0,
+        "numeric_storage_dtype": "int64",
+        "numeric_mean": 6.436306416364985,
+        "numeric_std": 14.796655165347943,
+        "numeric_min": 0,
+        "numeric_max": 7393,
+        "numeric_bin_edges": [
+          0.0,
+          1.0,
+          2.0,
+          3.0,
+          5.0,
+          6.0,
+          8.0,
+          11.0,
+          15.0,
+          23.0,
+          7393.0
+        ]
+      }
+    },
+    {
+      "C1": {
+        "source": "sparse",
+        "type": "categorical",
+        "padding_idx": 0,
+        "vocab_size": 1446
+      }
+    },
+    {
+      "C2": {
+        "source": "sparse",
+        "type": "categorical",
+        "padding_idx": 0,
+        "vocab_size": 554
+      }
+    },
+    {
+      "C3": {
+        "source": "sparse",
+        "type": "categorical",
+        "padding_idx": 0,
+        "vocab_size": 157339
+      }
+    },
+    {
+      "C4": {
+        "source": "sparse",
+        "type": "categorical",
+        "padding_idx": 0,
+        "vocab_size": 117822
+      }
+    },
+    {
+      "C5": {
+        "source": "sparse",
+        "type": "categorical",
+        "padding_idx": 0,
+        "vocab_size": 306
+      }
+    },
+    {
+      "C6": {
+        "source": "sparse",
+        "type": "categorical",
+        "padding_idx": 0,
+        "vocab_size": 18
+      }
+    },
+    {
+      "C7": {
+        "source": "sparse",
+        "type": "categorical",
+        "padding_idx": 0,
+        "vocab_size": 11882
+      }
+    },
+    {
+      "C8": {
+        "source": "sparse",
+        "type": "categorical",
+        "padding_idx": 0,
+        "vocab_size": 630
+      }
+    },
+    {
+      "C9": {
+        "source": "sparse",
+        "type": "categorical",
+        "padding_idx": 0,
+        "vocab_size": 5
+      }
+    },
+    {
+      "C10": {
+        "source": "sparse",
+        "type": "categorical",
+        "padding_idx": 0,
+        "vocab_size": 39530
+      }
+    },
+    {
+      "C11": {
+        "source": "sparse",
+        "type": "categorical",
+        "padding_idx": 0,
+        "vocab_size": 5131
+      }
+    },
+    {
+      "C12": {
+        "source": "sparse",
+        "type": "categorical",
+        "padding_idx": 0,
+        "vocab_size": 156656
+      }
+    },
+    {
+      "C13": {
+        "source": "sparse",
+        "type": "categorical",
+        "padding_idx": 0,
+        "vocab_size": 3176
+      }
+    },
+    {
+      "C14": {
+        "source": "sparse",
+        "type": "categorical",
+        "padding_idx": 0,
+        "vocab_size": 28
+      }
+    },
+    {
+      "C15": {
+        "source": "sparse",
+        "type": "categorical",
+        "padding_idx": 0,
+        "vocab_size": 11043
+      }
+    },
+    {
+      "C16": {
+        "source": "sparse",
+        "type": "categorical",
+        "padding_idx": 0,
+        "vocab_size": 148913
+      }
+    },
+    {
+      "C17": {
+        "source": "sparse",
+        "type": "categorical",
+        "padding_idx": 0,
+        "vocab_size": 12
+      }
+    },
+    {
+      "C18": {
+        "source": "sparse",
+        "type": "categorical",
+        "padding_idx": 0,
+        "vocab_size": 4560
+      }
+    },
+    {
+      "C19": {
+        "source": "sparse",
+        "type": "categorical",
+        "padding_idx": 0,
+        "vocab_size": 2003
+      }
+    },
+    {
+      "C20": {
+        "source": "sparse",
+        "type": "categorical",
+        "padding_idx": 0,
+        "vocab_size": 5
+      }
+    },
+    {
+      "C21": {
+        "source": "sparse",
+        "type": "categorical",
+        "padding_idx": 0,
+        "vocab_size": 154564
+      }
+    },
+    {
+      "C22": {
+        "source": "sparse",
+        "type": "categorical",
+        "padding_idx": 0,
+        "vocab_size": 18
+      }
+    },
+    {
+      "C23": {
+        "source": "sparse",
+        "type": "categorical",
+        "padding_idx": 0,
+        "vocab_size": 17
+      }
+    },
+    {
+      "C24": {
+        "source": "sparse",
+        "type": "categorical",
+        "padding_idx": 0,
+        "vocab_size": 53031
+      }
+    },
+    {
+      "C25": {
+        "source": "sparse",
+        "type": "categorical",
+        "padding_idx": 0,
+        "vocab_size": 82
+      }
+    },
+    {
+      "C26": {
+        "source": "sparse",
+        "type": "categorical",
+        "padding_idx": 0,
+        "vocab_size": 40955
+      }
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "scalarlens-ctr"
+version = "0.1.0"
+description = "ScalarLens: stable scalar coordinates and contextual numerical responses for CTR"
+readme = "README.md"
+license = "Apache-2.0"
+requires-python = ">=3.10,<3.13"
+dependencies = ["torch>=2.6,<2.7", "numpy>=1.26,<2", "pandas>=2.2,<3", "pyarrow>=19,<20", "polars>=1.24,<2", "PyYAML>=6,<7", "scikit-learn>=1.6,<1.7", "packaging>=24", "h5py>=3.12", "keras-preprocessing==1.1.2", "tqdm>=4.67", "rtdl-num-embeddings==0.0.12"]
+
+[project.optional-dependencies]
+test = ["pytest>=8.3,<9", "tomli>=2; python_version < '3.11'"]
+cuda = ["triton>=3.2,<3.3; sys_platform == 'linux' and platform_machine == 'x86_64'"]
+
+[project.scripts]
+scalarlens-train = "scalarlens.train:main"
+scalarlens-reproduce = "scalarlens.results:main"
+scalarlens-matrix = "scalarlens.matrix:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+scalarlens = ["assets/*.yaml"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

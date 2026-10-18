@@ -1,0 +1,287 @@
+{
+  "status": "PASS",
+  "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "scope": "CPU regression + synthetic training + archived paper reaggregation; not real-data retraining.",
+  "packages": {
+    "torch": "2.6.0",
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "pyarrow": "19.0.1",
+    "polars": "1.24.0",
+    "scikit-learn": "1.6.1",
+    "PyYAML": "6.0.2",
+    "rtdl-num-embeddings": "0.0.12"
+  },
+  "checks": [
+    {
+      "name": "pip_check",
+      "returncode": 0,
+      "log": "pip_check.log"
+    },
+    {
+      "name": "publication_audit",
+      "returncode": 0,
+      "log": "publication_audit.log"
+    },
+    {
+      "name": "pytest",
+      "returncode": 0,
+      "log": "pytest.log"
+    },
+    {
+      "name": "real_schema_equivalence",
+      "returncode": 0,
+      "log": "real_schema_equivalence.log"
+    },
+    {
+      "name": "paper_reaggregation",
+      "returncode": 0,
+      "log": "paper_reaggregation.log"
+    },
+    {
+      "name": "make_smoke",
+      "returncode": 0,
+      "log": "make_smoke.log"
+    },
+    {
+      "name": "smoke_00_DCNv2_scalarlens_2026",
+      "returncode": 0,
+      "log": "smoke_00_DCNv2_scalarlens_2026.log"
+    },
+    {
+      "name": "smoke_01_DCNv2_scalarlens_2027",
+      "returncode": 0,
+      "log": "smoke_01_DCNv2_scalarlens_2027.log"
+    },
+    {
+      "name": "smoke_02_DCNv2_scalarlens_2028",
+      "returncode": 0,
+      "log": "smoke_02_DCNv2_scalarlens_2028.log"
+    },
+    {
+      "name": "smoke_03_DeepFM_scalarlens_2026",
+      "returncode": 0,
+      "log": "smoke_03_DeepFM_scalarlens_2026.log"
+    },
+    {
+      "name": "smoke_04_DNN_scalarlens_2026",
+      "returncode": 0,
+      "log": "smoke_04_DNN_scalarlens_2026.log"
+    },
+    {
+      "name": "smoke_05_DCNv2_field_2026",
+      "returncode": 0,
+      "log": "smoke_05_DCNv2_field_2026.log"
+    },
+    {
+      "name": "smoke_06_DCNv2_deer_2026",
+      "returncode": 0,
+      "log": "smoke_06_DCNv2_deer_2026.log"
+    },
+    {
+      "name": "smoke_07_DCNv2_daes_gate_2026",
+      "returncode": 0,
+      "log": "smoke_07_DCNv2_daes_gate_2026.log"
+    },
+    {
+      "name": "smoke_08_DCNv2_narydis_2026",
+      "returncode": 0,
+      "log": "smoke_08_DCNv2_narydis_2026.log"
+    },
+    {
+      "name": "smoke_09_DCNv2_scalarlens_2026",
+      "returncode": 0,
+      "log": "smoke_09_DCNv2_scalarlens_2026.log"
+    }
+  ],
+  "smoke_results": [
+    {
+      "dataset": "ScalarLensSmoke",
+      "backbone": "DCNv2",
+      "method": "scalarlens",
+      "seed": 2026,
+      "val_auc": 0.584448927196039,
+      "val_logloss": 0.6871568109329803,
+      "test_auc": 0.5305648854961832,
+      "test_logloss": 0.6915396789379489,
+      "best_epoch": 2,
+      "stopped_epoch": 2,
+      "elapsed_seconds": 2.7764617090579122,
+      "loading_seconds": 0.13968662498518825,
+      "checkpoint": "<temporary CPU smoke checkpoint; not distributed>",
+      "selection_metric": "validation AUC"
+    },
+    {
+      "dataset": "ScalarLensSmoke",
+      "backbone": "DCNv2",
+      "method": "scalarlens",
+      "seed": 2027,
+      "val_auc": 0.583470872302708,
+      "val_logloss": 0.6831090935242113,
+      "test_auc": 0.5699541984732825,
+      "test_logloss": 0.6859811457415821,
+      "best_epoch": 2,
+      "stopped_epoch": 2,
+      "elapsed_seconds": 2.9609102501999587,
+      "loading_seconds": 0.5389965418726206,
+      "checkpoint": "<temporary CPU smoke checkpoint; not distributed>",
+      "selection_metric": "validation AUC"
+    },
+    {
+      "dataset": "ScalarLensSmoke",
+      "backbone": "DCNv2",
+      "method": "scalarlens",
+      "seed": 2028,
+      "val_auc": 0.5786417262668868,
+      "val_logloss": 0.6882994719685721,
+      "test_auc": 0.5203053435114504,
+      "test_logloss": 0.6924846013853622,
+      "best_epoch": 1,
+      "stopped_epoch": 2,
+      "elapsed_seconds": 2.0199324171990156,
+      "loading_seconds": 0.10148412501439452,
+      "checkpoint": "<temporary CPU smoke checkpoint; not distributed>",
+      "selection_metric": "validation AUC"
+    },
+    {
+      "dataset": "ScalarLensSmoke",
+      "backbone": "DeepFM",
+      "method": "scalarlens",
+      "seed": 2026,
+      "val_auc": 0.5706339018277401,
+      "val_logloss": 0.6852216062831383,
+      "test_auc": 0.5294045801526717,
+      "test_logloss": 0.6954705358736901,
+      "best_epoch": 2,
+      "stopped_epoch": 2,
+      "elapsed_seconds": 2.6506209578365088,
+      "loading_seconds": 0.27992370817810297,
+      "checkpoint": "<temporary CPU smoke checkpoint; not distributed>",
+      "selection_metric": "validation AUC"
+    },
+    {
+      "dataset": "ScalarLensSmoke",
+      "backbone": "DNN",
+      "method": "scalarlens",
+      "seed": 2026,
+      "val_auc": 0.539091631517819,
+      "val_logloss": 0.6923045132912201,
+      "test_auc": 0.543145038167939,
+      "test_logloss": 0.6905178627900692,
+      "best_epoch": 1,
+      "stopped_epoch": 2,
+      "elapsed_seconds": 2.7582790828309953,
+      "loading_seconds": 0.10185695788823068,
+      "checkpoint": "<temporary CPU smoke checkpoint; not distributed>",
+      "selection_metric": "validation AUC"
+    },
+    {
+      "dataset": "ScalarLensSmoke",
+      "backbone": "DCNv2",
+      "method": "field",
+      "seed": 2026,
+      "val_auc": 0.5932514212360169,
+      "val_logloss": 0.688641248746508,
+      "test_auc": 0.5462595419847328,
+      "test_logloss": 0.6913034271415597,
+      "best_epoch": 2,
+      "stopped_epoch": 2,
+      "elapsed_seconds": 2.2342600831761956,
+      "loading_seconds": 0.10585016710683703,
+      "checkpoint": "<temporary CPU smoke checkpoint; not distributed>",
+      "selection_metric": "validation AUC"
+    },
+    {
+      "dataset": "ScalarLensSmoke",
+      "backbone": "DCNv2",
+      "method": "deer",
+      "seed": 2026,
+      "val_auc": 0.6006479613668317,
+      "val_logloss": 0.6913232222743869,
+      "test_auc": 0.5428396946564886,
+      "test_logloss": 0.6917604836841431,
+      "best_epoch": 2,
+      "stopped_epoch": 2,
+      "elapsed_seconds": 2.9835973328445107,
+      "loading_seconds": 0.11209787498228252,
+      "checkpoint": "<temporary CPU smoke checkpoint; not distributed>",
+      "selection_metric": "validation AUC"
+    },
+    {
+      "dataset": "ScalarLensSmoke",
+      "backbone": "DCNv2",
+      "method": "daes_gate",
+      "seed": 2026,
+      "val_auc": 0.6057216211259857,
+      "val_logloss": 0.6885381065907372,
+      "test_auc": 0.5240916030534352,
+      "test_logloss": 0.691722575053634,
+      "best_epoch": 2,
+      "stopped_epoch": 2,
+      "elapsed_seconds": 2.230552500113845,
+      "loading_seconds": 0.12069937493652105,
+      "checkpoint": "<temporary CPU smoke checkpoint; not distributed>",
+      "selection_metric": "validation AUC"
+    },
+    {
+      "dataset": "ScalarLensSmoke",
+      "backbone": "DCNv2",
+      "method": "narydis",
+      "seed": 2026,
+      "val_auc": 0.5660492695152515,
+      "val_logloss": 0.6926001960871151,
+      "test_auc": 0.5417709923664122,
+      "test_logloss": 0.6923815124477859,
+      "best_epoch": 2,
+      "stopped_epoch": 2,
+      "elapsed_seconds": 2.3772390419617295,
+      "loading_seconds": 0.11884170793928206,
+      "checkpoint": "<temporary CPU smoke checkpoint; not distributed>",
+      "selection_metric": "validation AUC"
+    },
+    {
+      "dataset": "ScalarLensSmoke",
+      "backbone": "DCNv2",
+      "method": "scalarlens",
+      "seed": 2026,
+      "val_auc": 0.584448927196039,
+      "val_logloss": 0.6871568109329803,
+      "test_auc": 0.5305648854961832,
+      "test_logloss": 0.6915396789379489,
+      "best_epoch": 2,
+      "stopped_epoch": 2,
+      "elapsed_seconds": 2.6864769170060754,
+      "loading_seconds": 0.17023962503299117,
+      "checkpoint": "<temporary CPU smoke checkpoint; not distributed>",
+      "selection_metric": "validation AUC"
+    }
+  ],
+  "cpu_seed_repeat_exact": true,
+  "elapsed_seconds": 107.38672862504609,
+  "paper_audit": {
+    "status": "PASS",
+    "scope": "Archived record reaggregation and paper-table audit; not a full training rerun.",
+    "per_seed_records": 1539,
+    "summary_groups": 513,
+    "aggregate_values_checked": 4104,
+    "table_cells_checked": 513,
+    "table_values_checked": 1539,
+    "stratified_sample_cells": 54,
+    "sample_seed": 20261016,
+    "aggregation_errors": [],
+    "table_errors": [],
+    "source_sha256": {
+      "per_seed_1539.csv": "138f0565b630108eb5cb7f280309d70a693d9e651d5811495a954d6576aa6295",
+      "summary_513.csv": "6d70890b0750e6ae2aa0234a5c41d1e28dbe62a00edbd0d8d720690c3f13a1a0",
+      "table3_english.tex": "9fc59cfde95675124e22877a12dc8f37b02112c12281ceb5447281dbd639dd80"
+    },
+    "scalarlens": {
+      "method": "scalarlens",
+      "mean_rank": 1.0740740740740742,
+      "wins": 25,
+      "settings": 27
+    },
+    "ranking_note": "Ranks recomputed across the 19 displayed methods; archived rank columns are not used."
+  }
+}

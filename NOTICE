@@ -1,0 +1,12 @@
+ScalarLens reproduction package
+
+This distribution includes FuxiCTR 2.3.10 and model definitions derived from
+FuxiCTR, under the Apache License, Version 2.0. Their original copyright
+notices are retained in source files and reproduction/licenses.
+
+The private scalarlens._legacy namespace contains the executed research
+implementation snapshot for provenance, reference methods and exact regression
+tests. Historical names are preserved only for compatibility. Public APIs use
+ScalarLens naming. Original datasets and model checkpoints are not distributed.
+
+Dependencies are not relicensed by this repository; consult their licenses.

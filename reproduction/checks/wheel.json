@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "wheel": "scalarlens_ctr-0.1.0-py3-none-any.whl",
+  "scope": "Installed wheel, outside checkout, CPU synthetic data",
+  "result": {
+    "dataset": "ScalarLensSmoke",
+    "backbone": "DCNv2",
+    "method": "scalarlens",
+    "seed": 2026,
+    "val_auc": 0.584448927196039,
+    "val_logloss": 0.6871568109329803,
+    "test_auc": 0.5305648854961832,
+    "test_logloss": 0.6915396789379489,
+    "best_epoch": 2,
+    "stopped_epoch": 2,
+    "elapsed_seconds": 3.470231791958213,
+    "loading_seconds": 0.13778779213316739,
+    "checkpoint": "<temporary wheel smoke checkpoint; not distributed>",
+    "selection_metric": "validation AUC"
+  }
+}

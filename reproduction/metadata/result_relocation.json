@@ -1,0 +1,4 @@
+{
+  "original_per_seed_sha256": "56aabacf6bde0995ecbcccbdd87ee36b1b1e5505ff4ccdda226569f55fc050d0",
+  "transformation": "Only result_file paths were replaced with relative run/filename identifiers. All metric values, seeds and epochs are unchanged."
+}

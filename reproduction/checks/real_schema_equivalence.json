@@ -1,0 +1,223 @@
+{
+  "status": "PASS",
+  "combinations": 27,
+  "scope": "Archived real dataset schemas; artificial valid input rows, not real-data training.",
+  "records": [
+    {
+      "dataset": "AutoML_A",
+      "backbone": "DNN",
+      "parameter_count": 54946795,
+      "tensors_checked": 75,
+      "maximum_parameter_difference": 0.0,
+      "maximum_prediction_difference": 0.0
+    },
+    {
+      "dataset": "AutoML_A",
+      "backbone": "DeepFM",
+      "parameter_count": 58350232,
+      "tensors_checked": 128,
+      "maximum_parameter_difference": 0.0,
+      "maximum_prediction_difference": 0.0
+    },
+    {
+      "dataset": "AutoML_A",
+      "backbone": "WideDeep",
+      "parameter_count": 58350231,
+      "tensors_checked": 127,
+      "maximum_parameter_difference": 0.0,
+      "maximum_prediction_difference": 0.0
+    },
+    {
+      "dataset": "AutoML_A",
+      "backbone": "NFM",
+      "parameter_count": 58051223,
+      "tensors_checked": 127,
+      "maximum_parameter_difference": 0.0,
+      "maximum_prediction_difference": 0.0
+    },
+    {
+      "dataset": "AutoML_A",
+      "backbone": "PNN",
+      "parameter_count": 55643727,
+      "tensors_checked": 76,
+      "maximum_parameter_difference": 0.0,
+      "maximum_prediction_difference": 0.0
+    },
+    {
+      "dataset": "AutoML_A",
+      "backbone": "DCN",
+      "parameter_count": 54955083,
+      "tensors_checked": 81,
+      "maximum_parameter_difference": 0.0,
+      "maximum_prediction_difference": 0.0
+    },
+    {
+      "dataset": "AutoML_A",
+      "backbone": "DCNv2",
+      "parameter_count": 59157099,
+      "tensors_checked": 81,
+      "maximum_parameter_difference": 0.0,
+      "maximum_prediction_difference": 0.0
+    },
+    {
+      "dataset": "AutoML_A",
+      "backbone": "AutoInt",
+      "parameter_count": 54948092,
+      "tensors_checked": 84,
+      "maximum_parameter_difference": 0.0,
+      "maximum_prediction_difference": 0.0
+    },
+    {
+      "dataset": "AutoML_A",
+      "backbone": "FiBiNET",
+      "parameter_count": 81570987,
+      "tensors_checked": 133,
+      "maximum_parameter_difference": 0.0,
+      "maximum_prediction_difference": 0.0
+    },
+    {
+      "dataset": "AutoML_E",
+      "backbone": "DNN",
+      "parameter_count": 2119050,
+      "tensors_checked": 49,
+      "maximum_parameter_difference": 0.0,
+      "maximum_prediction_difference": 0.0
+    },
+    {
+      "dataset": "AutoML_E",
+      "backbone": "DeepFM",
+      "parameter_count": 2237592,
+      "tensors_checked": 76,
+      "maximum_parameter_difference": 0.0,
+      "maximum_prediction_difference": 0.0
+    },
+    {
+      "dataset": "AutoML_E",
+      "backbone": "WideDeep",
+      "parameter_count": 2237591,
+      "tensors_checked": 75,
+      "maximum_parameter_difference": 0.0,
+      "maximum_prediction_difference": 0.0
+    },
+    {
+      "dataset": "AutoML_E",
+      "backbone": "NFM",
+      "parameter_count": 2114711,
+      "tensors_checked": 75,
+      "maximum_parameter_difference": 0.0,
+      "maximum_prediction_difference": 0.0
+    },
+    {
+      "dataset": "AutoML_E",
+      "backbone": "PNN",
+      "parameter_count": 2239051,
+      "tensors_checked": 50,
+      "maximum_parameter_difference": 0.0,
+      "maximum_prediction_difference": 0.0
+    },
+    {
+      "dataset": "AutoML_E",
+      "backbone": "DCN",
+      "parameter_count": 2122522,
+      "tensors_checked": 55,
+      "maximum_parameter_difference": 0.0,
+      "maximum_prediction_difference": 0.0
+    },
+    {
+      "dataset": "AutoML_E",
+      "backbone": "DCNv2",
+      "parameter_count": 2859082,
+      "tensors_checked": 55,
+      "maximum_parameter_difference": 0.0,
+      "maximum_prediction_difference": 0.0
+    },
+    {
+      "dataset": "AutoML_E",
+      "backbone": "AutoInt",
+      "parameter_count": 2120003,
+      "tensors_checked": 58,
+      "maximum_parameter_difference": 0.0,
+      "maximum_prediction_difference": 0.0
+    },
+    {
+      "dataset": "AutoML_E",
+      "backbone": "FiBiNET",
+      "parameter_count": 6160455,
+      "tensors_checked": 81,
+      "maximum_parameter_difference": 0.0,
+      "maximum_prediction_difference": 0.0
+    },
+    {
+      "dataset": "Criteo_x4_NumEmbRaw",
+      "backbone": "DNN",
+      "parameter_count": 14839633,
+      "tensors_checked": 50,
+      "maximum_parameter_difference": 0.0,
+      "maximum_prediction_difference": 0.0
+    },
+    {
+      "dataset": "Criteo_x4_NumEmbRaw",
+      "backbone": "DeepFM",
+      "parameter_count": 15749568,
+      "tensors_checked": 78,
+      "maximum_parameter_difference": 0.0,
+      "maximum_prediction_difference": 0.0
+    },
+    {
+      "dataset": "Criteo_x4_NumEmbRaw",
+      "backbone": "WideDeep",
+      "parameter_count": 15749567,
+      "tensors_checked": 77,
+      "maximum_parameter_difference": 0.0,
+      "maximum_prediction_difference": 0.0
+    },
+    {
+      "dataset": "Criteo_x4_NumEmbRaw",
+      "backbone": "NFM",
+      "parameter_count": 15593919,
+      "tensors_checked": 77,
+      "maximum_parameter_difference": 0.0,
+      "maximum_prediction_difference": 0.0
+    },
+    {
+      "dataset": "Criteo_x4_NumEmbRaw",
+      "backbone": "PNN",
+      "parameter_count": 15030850,
+      "tensors_checked": 51,
+      "maximum_parameter_difference": 0.0,
+      "maximum_prediction_difference": 0.0
+    },
+    {
+      "dataset": "Criteo_x4_NumEmbRaw",
+      "backbone": "DCN",
+      "parameter_count": 14844001,
+      "tensors_checked": 56,
+      "maximum_parameter_difference": 0.0,
+      "maximum_prediction_difference": 0.0
+    },
+    {
+      "dataset": "Criteo_x4_NumEmbRaw",
+      "backbone": "DCNv2",
+      "parameter_count": 16010257,
+      "tensors_checked": 56,
+      "maximum_parameter_difference": 0.0,
+      "maximum_prediction_difference": 0.0
+    },
+    {
+      "dataset": "Criteo_x4_NumEmbRaw",
+      "backbone": "AutoInt",
+      "parameter_count": 14840650,
+      "tensors_checked": 59,
+      "maximum_parameter_difference": 0.0,
+      "maximum_prediction_difference": 0.0
+    },
+    {
+      "dataset": "Criteo_x4_NumEmbRaw",
+      "backbone": "FiBiNET",
+      "parameter_count": 22043465,
+      "tensors_checked": 83,
+      "maximum_parameter_difference": 0.0,
+      "maximum_prediction_difference": 0.0
+    }
+  ]
+}

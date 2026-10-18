@@ -1,0 +1,59 @@
+[
+  {
+    "dataset": "AutoML_A",
+    "feature_map": "AutoML_A/feature_map.json",
+    "feature_map_sha256": "10b2ec61b520a4fe55204ecbd75cddebd60293e92e7493b7a479108526d9790a",
+    "splits": {
+      "train": {
+        "path": "AutoML_A/train.parquet",
+        "bytes": 88459487,
+        "mtime_ns": 1788323071021404794,
+        "rows": 2801608
+      },
+      "valid": {
+        "path": "AutoML_A/valid.parquet",
+        "bytes": 27911986,
+        "mtime_ns": 1788323521424718025,
+        "rows": 1008610
+      }
+    }
+  },
+  {
+    "dataset": "AutoML_E",
+    "feature_map": "AutoML_E/feature_map.json",
+    "feature_map_sha256": "8ffdecb0ccdca3aec62dab12692839715f12259ae0498ee3709ef11c061be29f",
+    "splits": {
+      "train": {
+        "path": "AutoML_E/train.parquet",
+        "bytes": 114497537,
+        "mtime_ns": 1788322456944363744,
+        "rows": 5136305
+      },
+      "valid": {
+        "path": "AutoML_E/valid.parquet",
+        "bytes": 38089970,
+        "mtime_ns": 1788322606156029122,
+        "rows": 1815252
+      }
+    }
+  },
+  {
+    "dataset": "Criteo_x4_NumEmbRaw",
+    "feature_map": "Criteo_x4_NumEmbRaw/feature_map.json",
+    "feature_map_sha256": "2b99ba43cfe5441bff77af390e93f7773c15b35bd5f1cf0de58bfd44996acaf1",
+    "splits": {
+      "train": {
+        "path": "Criteo_x4_NumEmbRaw/train.parquet",
+        "bytes": 2135047194,
+        "mtime_ns": 1787909893114682523,
+        "rows": 36672493
+      },
+      "valid": {
+        "path": "Criteo_x4_NumEmbRaw/valid.parquet",
+        "bytes": 266430024,
+        "mtime_ns": 1787909900654235410,
+        "rows": 4584062
+      }
+    }
+  }
+]

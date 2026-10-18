@@ -1,0 +1,601 @@
+{
+  "files": [
+    {
+      "file": ".github/workflows/tests.yml",
+      "bytes": 669,
+      "sha256": "c45cb09c26faf02d7ea5a1c04c37b51f2ff454c00f64669fa1db32bd4ca8c394"
+    },
+    {
+      "file": ".gitignore",
+      "bytes": 171,
+      "sha256": "77c5b24e9f08135a139f7dd066b9a6fa7d0bf8121d3b2462f274f0a090f56be5"
+    },
+    {
+      "file": "LICENSE",
+      "bytes": 13304,
+      "sha256": "ed24b2447e7415e4baeaf4366d12db81e8a21224f3f1a69c08b8e30807b2ebaa"
+    },
+    {
+      "file": "MANIFEST.in",
+      "bytes": 253,
+      "sha256": "8344bd3aa67ab24f6c0f42aa43f4a53869d3f4d941e7a3b077959b6c74987227"
+    },
+    {
+      "file": "NOTICE",
+      "bytes": 634,
+      "sha256": "fa99ac36984947deef35361ffe820ab8ed4b4ea702867bf169ffc0d57d0f8914"
+    },
+    {
+      "file": "README.md",
+      "bytes": 9969,
+      "sha256": "7b3ee71d839bbaf7be473fa80eff6f04875012d2c000961966f943311d714ae1"
+    },
+    {
+      "file": "pyproject.toml",
+      "bytes": 1077,
+      "sha256": "faf7dc1b5e95109324a890fef15a4d1a669ab46b51bdfb746bb7ddcdf35ff1ec"
+    },
+    {
+      "file": "reproduction/README.md",
+      "bytes": 7553,
+      "sha256": "bd4c2de9c2593950c6404dba723ebfc3b0c4bceb7ba98fdb794de9d5663be7b4"
+    },
+    {
+      "file": "reproduction/checks/audit.json",
+      "bytes": 396,
+      "sha256": "64858140fcd04cc46f1d6aaf6e23d9b1ef5b0da631a32d30db2fd156b85268cd"
+    },
+    {
+      "file": "reproduction/checks/real_schema_equivalence.json",
+      "bytes": 6169,
+      "sha256": "403b9c5f0613be0a34db22cf2f5453e60c44e9d786614cbb5ce22d9cf7f0cf08"
+    },
+    {
+      "file": "reproduction/checks/verification.json",
+      "bytes": 8861,
+      "sha256": "e77d8cf2a1cb98767bbb5052c364d8332f717288cd8841a83a8025ad0c535273"
+    },
+    {
+      "file": "reproduction/checks/wheel.json",
+      "bytes": 661,
+      "sha256": "0a70d638862ed33d9c5f58f8232f991e381c02d14252aa7346a5e7460be0a483"
+    },
+    {
+      "file": "reproduction/licenses/FuxiCTR-Apache-2.0.txt",
+      "bytes": 13304,
+      "sha256": "ed24b2447e7415e4baeaf4366d12db81e8a21224f3f1a69c08b8e30807b2ebaa"
+    },
+    {
+      "file": "reproduction/metadata/datasets.json",
+      "bytes": 1609,
+      "sha256": "4eca44ad87afe658123c284eedd655b99ea84c20c4a0e9bf7d1a607fed5674ac"
+    },
+    {
+      "file": "reproduction/metadata/feature_maps/AutoML_A/feature_map.json",
+      "bytes": 20918,
+      "sha256": "10b2ec61b520a4fe55204ecbd75cddebd60293e92e7493b7a479108526d9790a"
+    },
+    {
+      "file": "reproduction/metadata/feature_maps/AutoML_E/feature_map.json",
+      "bytes": 8242,
+      "sha256": "8ffdecb0ccdca3aec62dab12692839715f12259ae0498ee3709ef11c061be29f"
+    },
+    {
+      "file": "reproduction/metadata/feature_maps/Criteo_x4_NumEmbRaw/feature_map.json",
+      "bytes": 11375,
+      "sha256": "2b99ba43cfe5441bff77af390e93f7773c15b35bd5f1cf0de58bfd44996acaf1"
+    },
+    {
+      "file": "reproduction/metadata/result_relocation.json",
+      "bytes": 252,
+      "sha256": "c97b2c9c7b0078bb71541fd0f300a2604765902bb860b1e1dee64f1d07b7d728"
+    },
+    {
+      "file": "reproduction/metadata/source_imports.json",
+      "bytes": 23599,
+      "sha256": "e173b74b1b67b0300f43ff9b73b712ae3f77722429cf9bd5c32233ed52c752ed"
+    },
+    {
+      "file": "reproduction/metadata/training_environment.json",
+      "bytes": 575,
+      "sha256": "190dd3ba1e41ed35d3949f44d51b48557b8d09faf319383669db00dbff0ddcf9"
+    },
+    {
+      "file": "reproduction/paper/per_seed_1539.csv",
+      "bytes": 270674,
+      "sha256": "138f0565b630108eb5cb7f280309d70a693d9e651d5811495a954d6576aa6295"
+    },
+    {
+      "file": "reproduction/paper/summary_513.csv",
+      "bytes": 105424,
+      "sha256": "6d70890b0750e6ae2aa0234a5c41d1e28dbe62a00edbd0d8d720690c3f13a1a0"
+    },
+    {
+      "file": "reproduction/paper/table3_english.tex",
+      "bytes": 23406,
+      "sha256": "9fc59cfde95675124e22877a12dc8f37b02112c12281ceb5447281dbd639dd80"
+    },
+    {
+      "file": "requirements.txt",
+      "bytes": 363,
+      "sha256": "9f86fc015a340a1e2a99bba676234d616039056d9b4f2fba67389c3da07e47aa"
+    },
+    {
+      "file": "scripts/audit.py",
+      "bytes": 4176,
+      "sha256": "c0770881eeada65e0ea3f10a55d90b08e91fccdac93f00b5573059f1f2d1a8ea"
+    },
+    {
+      "file": "scripts/check_schemas.py",
+      "bytes": 3998,
+      "sha256": "9a1f9338141363ae915c3863d1e290d83e903aa0fa1a3604aa66151252f420f9"
+    },
+    {
+      "file": "scripts/package.py",
+      "bytes": 1476,
+      "sha256": "7819cbe0e1de304841352711f7cfda71ecb43ff07872c930c5f3b5caba0e513a"
+    },
+    {
+      "file": "scripts/verify.py",
+      "bytes": 6508,
+      "sha256": "aaa3695394a24d51fc8955d906157220e59cae6eda354c6e338219352fad691f"
+    },
+    {
+      "file": "scripts/verify_wheel.py",
+      "bytes": 3542,
+      "sha256": "102dee60d6084418baff5aee3e437762f26e850ee770c3552b073ed0aef70e52"
+    },
+    {
+      "file": "src/fuxictr/__init__.py",
+      "bytes": 32,
+      "sha256": "f332c683e0df4219c39762b2d27fb35e937ef1efa0ee247401c688e25e15be99"
+    },
+    {
+      "file": "src/fuxictr/autotuner.py",
+      "bytes": 7885,
+      "sha256": "4681403f6734459f2325c003552118729b2e5654195cb42cd599da300fa490d5"
+    },
+    {
+      "file": "src/fuxictr/datasets/__init__.py",
+      "bytes": 61,
+      "sha256": "0bf0bd141bf3cc5973cba9aad8bb6fdd5c257acc39d8aa876082a37a9c7aed89"
+    },
+    {
+      "file": "src/fuxictr/datasets/avazu.py",
+      "bytes": 2444,
+      "sha256": "e3d1beeee79cf7e59c60287fb3f1ab2845ae13c1d64bf8cf3103dd641811d20d"
+    },
+    {
+      "file": "src/fuxictr/datasets/criteo.py",
+      "bytes": 1664,
+      "sha256": "ecea1613d552d35ccea3d800859ad95ae2fe05fbe5c0532b26269860775d3169"
+    },
+    {
+      "file": "src/fuxictr/datasets/kkbox.py",
+      "bytes": 2183,
+      "sha256": "eecbe9df610c26fb86548d46ee52f5d6cfd7fc09f1237c2ee5b380042ef330c7"
+    },
+    {
+      "file": "src/fuxictr/features.py",
+      "bytes": 9626,
+      "sha256": "578d9c1fa2e266581c500bbee520a892ccf5f76df9c38d59527b3a7271021a1b"
+    },
+    {
+      "file": "src/fuxictr/metrics.py",
+      "bytes": 6631,
+      "sha256": "7ee8cf2a166ef334d63bbaecce37dd6955aaa832db191cb9ee1416c60e7bb8fe"
+    },
+    {
+      "file": "src/fuxictr/preprocess/__init__.py",
+      "bytes": 61,
+      "sha256": "8bd7fe37cb8cd8a57c2b9371b4630644ed27218a07e3900dc554cf336a7c0790"
+    },
+    {
+      "file": "src/fuxictr/preprocess/build_dataset.py",
+      "bytes": 7349,
+      "sha256": "7eb31aa8fd09eb2725e9d9c62ef7eaf84ad6c8fc9a1d16800bb0049f8e070842"
+    },
+    {
+      "file": "src/fuxictr/preprocess/feature_processor.py",
+      "bytes": 24761,
+      "sha256": "5bd9da6769c9aadd2871852d1164df0345052c1b7ede394222c0b7229e567ff5"
+    },
+    {
+      "file": "src/fuxictr/preprocess/normalizer.py",
+      "bytes": 2401,
+      "sha256": "c3d302b5b2db10e79916bc626bcea1d85de241080056a00bea58c4e252c2afa7"
+    },
+    {
+      "file": "src/fuxictr/preprocess/tokenizer.py",
+      "bytes": 10585,
+      "sha256": "7f62f37d2b41fe104987c345b3e66c9ab8af3bbaded66eaec555d32d54428989"
+    },
+    {
+      "file": "src/fuxictr/pytorch/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "src/fuxictr/pytorch/dataloaders/__init__.py",
+      "bytes": 44,
+      "sha256": "b239f1b0661a469db26d5ef2623d26013b12ceaae310c323d26c009f83852cac"
+    },
+    {
+      "file": "src/fuxictr/pytorch/dataloaders/npz_block_dataloader.py",
+      "bytes": 6338,
+      "sha256": "08fee88a66989021664d52958d1cf0aefb990278ea49dd59b8128c87e4a4b5bc"
+    },
+    {
+      "file": "src/fuxictr/pytorch/dataloaders/npz_dataloader.py",
+      "bytes": 4396,
+      "sha256": "a7f8cb0f7f3b0418ea6419ad8aec2ad4afeae2874e14229603320811d085d0dd"
+    },
+    {
+      "file": "src/fuxictr/pytorch/dataloaders/parquet_block_dataloader.py",
+      "bytes": 6594,
+      "sha256": "538860b9a01c21a692417ad8d9812e94339bf4bf9de0b46c375271d00cb8c01e"
+    },
+    {
+      "file": "src/fuxictr/pytorch/dataloaders/parquet_dataloader.py",
+      "bytes": 4605,
+      "sha256": "121f357709129df12233b8b3db404d99061138abe4e276fc3f9181b91799de21"
+    },
+    {
+      "file": "src/fuxictr/pytorch/dataloaders/rank_dataloader.py",
+      "bytes": 4870,
+      "sha256": "35d80e44fd003513e9ca1d1db886f2913919c41516c101f9bf6b70e5bbfb09e6"
+    },
+    {
+      "file": "src/fuxictr/pytorch/layers/__init__.py",
+      "bytes": 155,
+      "sha256": "1b33eab30a360712ef5331b414331609617e36c2d222254feec43cd1b73b53b1"
+    },
+    {
+      "file": "src/fuxictr/pytorch/layers/activations.py",
+      "bytes": 2442,
+      "sha256": "6dbc6b6518861a0cbd3536b5d62bddefde48ce5545bcf3f6bb3f5c75e67ba8a0"
+    },
+    {
+      "file": "src/fuxictr/pytorch/layers/attentions/__init__.py",
+      "bytes": 104,
+      "sha256": "deedc5c231c88f38b47aa819113098b359b86d3c8518aa0ad1b5d5d581d1ea89"
+    },
+    {
+      "file": "src/fuxictr/pytorch/layers/attentions/dot_product_attention.py",
+      "bytes": 2432,
+      "sha256": "53ddb893983dc9ed893e0f4249644ab433e22b681fa793ada4bb078261e65c41"
+    },
+    {
+      "file": "src/fuxictr/pytorch/layers/attentions/squeeze_excitation.py",
+      "bytes": 2684,
+      "sha256": "ba3e3c586c98cee66ec64c0fa1f64b6c0ecf7b4525268e8fd75ba2a01fd9a6f6"
+    },
+    {
+      "file": "src/fuxictr/pytorch/layers/attentions/target_attention.py",
+      "bytes": 8363,
+      "sha256": "90038d2113d000d0acca03e54f2491ab57515943f7d730d665ebec5662a74b6a"
+    },
+    {
+      "file": "src/fuxictr/pytorch/layers/blocks/__init__.py",
+      "bytes": 97,
+      "sha256": "11bbd6e29dadf7393b219748eaaca346ccb2ca0652509642c33d439f164eb68f"
+    },
+    {
+      "file": "src/fuxictr/pytorch/layers/blocks/factorization_machine.py",
+      "bytes": 2422,
+      "sha256": "29b04776e5346625cf1e020add9bbf9caafa53dadfb123f24fa3d00488d5f6f7"
+    },
+    {
+      "file": "src/fuxictr/pytorch/layers/blocks/logistic_regression.py",
+      "bytes": 5993,
+      "sha256": "5b2b44eda409d5b4d0af84da8b86a61ef02ddcd1fcf0cc7291f28f2da370a7c1"
+    },
+    {
+      "file": "src/fuxictr/pytorch/layers/blocks/mlp_block.py",
+      "bytes": 4582,
+      "sha256": "2cbac9d6377a5ec5e1fcda7c6fbb7321442c8a6cc7178f5dfc8cdd0f257281e2"
+    },
+    {
+      "file": "src/fuxictr/pytorch/layers/embeddings/__init__.py",
+      "bytes": 104,
+      "sha256": "b3b28fe629a09e60907fa16ea8743b8f726603f6751f7605abdb777910612888"
+    },
+    {
+      "file": "src/fuxictr/pytorch/layers/embeddings/feature_embedding.py",
+      "bytes": 21599,
+      "sha256": "47e26cec364dea58b8e4f146f58bca271fdc9b068371a6ed856af7d98d1e874a"
+    },
+    {
+      "file": "src/fuxictr/pytorch/layers/embeddings/grouped_lookup.py",
+      "bytes": 3122,
+      "sha256": "af258d8885659b5ad2a8b7df3e17c7c7aa84454e889326927f1e1a345cf79229"
+    },
+    {
+      "file": "src/fuxictr/pytorch/layers/embeddings/numerical_embedding.py",
+      "bytes": 2668,
+      "sha256": "a3fd085db197013a4dd70617fbcd08c2b6b100243fb45dfd38a06e49afaa1094"
+    },
+    {
+      "file": "src/fuxictr/pytorch/layers/embeddings/pretrained_embedding.py",
+      "bytes": 8957,
+      "sha256": "57b81759afac5639e2a8df10d5b6f990b9dc8290c202a3a990c611fc9cbc8a73"
+    },
+    {
+      "file": "src/fuxictr/pytorch/layers/interactions/__init__.py",
+      "bytes": 236,
+      "sha256": "e084827340ce1cd351da1b603ec00525749f636273f525f87ccb985db3e271c9"
+    },
+    {
+      "file": "src/fuxictr/pytorch/layers/interactions/bilinear_interaction.py",
+      "bytes": 7251,
+      "sha256": "71019fbe09b1ef3d4fae4f76603b905292870b9cf58e1b341fd48e33516ce7b6"
+    },
+    {
+      "file": "src/fuxictr/pytorch/layers/interactions/compressed_interaction_net.py",
+      "bytes": 3393,
+      "sha256": "cca5ecb2b4dfab8d93b0845a6601d17b6d4210760cd92fe443672ecba74b555d"
+    },
+    {
+      "file": "src/fuxictr/pytorch/layers/interactions/cross_net.py",
+      "bytes": 7581,
+      "sha256": "bd1627cec81db448e7147b06e64e2457a58ee12e4dbec2a7c0c7310a1f7c07d3"
+    },
+    {
+      "file": "src/fuxictr/pytorch/layers/interactions/holographic_interaction.py",
+      "bytes": 4163,
+      "sha256": "021a1a7f31bde89de897189b95475df2c8198ef5cef46d43c15ced4e0105af63"
+    },
+    {
+      "file": "src/fuxictr/pytorch/layers/interactions/inner_product.py",
+      "bytes": 3537,
+      "sha256": "08281a17563621edcaa5559f293bebc3309e21f70e22fceb485659f5c50f7f2d"
+    },
+    {
+      "file": "src/fuxictr/pytorch/layers/interactions/interaction_machine.py",
+      "bytes": 5101,
+      "sha256": "c1edb21b9ead67ae8e17e9abda40393c2e2043ec9f21111ef9f8a45082be2704"
+    },
+    {
+      "file": "src/fuxictr/pytorch/layers/pooling.py",
+      "bytes": 3718,
+      "sha256": "34b19fc2ea89e981364a8ff7770c0127aceb924c1924fc7690da1b847e4ff0e0"
+    },
+    {
+      "file": "src/fuxictr/pytorch/models/__init__.py",
+      "bytes": 77,
+      "sha256": "70c6c06f41ebeed3d678e1eb9586d764667e54ed4dac0120ffed714d0e2bd1a9"
+    },
+    {
+      "file": "src/fuxictr/pytorch/models/multitask_model.py",
+      "bytes": 11283,
+      "sha256": "36188ec86a45b9e3fcdec7c34fc508a45d5b843e1ba2e62c7b85f2bd13f20f69"
+    },
+    {
+      "file": "src/fuxictr/pytorch/models/rank_model.py",
+      "bytes": 19742,
+      "sha256": "579c7776b53417a5998c75c6173ebab905c54a118bb810b82ef28f453a7016ce"
+    },
+    {
+      "file": "src/fuxictr/pytorch/torch_utils.py",
+      "bytes": 6530,
+      "sha256": "42d7144bc90a850a3b4113472e87c7cca7a4ebf897e7c2a5ee47d575dbf124af"
+    },
+    {
+      "file": "src/fuxictr/utils.py",
+      "bytes": 7946,
+      "sha256": "d01b7a7a3712db6a2f1ebb0acf9c065600d7369aa74be913cfdc878296fcf534"
+    },
+    {
+      "file": "src/fuxictr/version.py",
+      "bytes": 21,
+      "sha256": "4247b5747543c63e419169cde650e2abca39db1b23128e38a0ba6e310f087bfc"
+    },
+    {
+      "file": "src/scalarlens/__init__.py",
+      "bytes": 454,
+      "sha256": "0371df11c15472144b3f935667987606a0f186184cc086610caea14dc3c538c3"
+    },
+    {
+      "file": "src/scalarlens/_legacy/__init__.py",
+      "bytes": 54,
+      "sha256": "4f6bfa061c74c6a7d008476bf2c8401088d66a7897cd69b8de83574a877fd083"
+    },
+    {
+      "file": "src/scalarlens/_legacy/atlasdeer.py",
+      "bytes": 21827,
+      "sha256": "4a3e31e6a00c0a524116301497861bc8dba7b4218d3104945e89bb225989d32a"
+    },
+    {
+      "file": "src/scalarlens/_legacy/coupled_scattering.py",
+      "bytes": 18930,
+      "sha256": "e3ab2d638e9721450f460799791da5103dd6aaeb2cfd0d9db44e4db55654cae1"
+    },
+    {
+      "file": "src/scalarlens/_legacy/deer_engineering.py",
+      "bytes": 4747,
+      "sha256": "c5873c1bd78c383e15ccf1e6dccca785170f3bd2314387ce3bc9cde7a6980bd9"
+    },
+    {
+      "file": "src/scalarlens/_legacy/deer_split_engineering.py",
+      "bytes": 666,
+      "sha256": "974bfa082cc74da7ff2f9070405cdf6f1791fc3afeab29e8a1503916144c505c"
+    },
+    {
+      "file": "src/scalarlens/_legacy/deer_triton_engineering.py",
+      "bytes": 6702,
+      "sha256": "8298ee41cd8a9a9f3ccc6b493e06c634174efe8df7d129eb6163c83d795ae939"
+    },
+    {
+      "file": "src/scalarlens/_legacy/fast_coupled_embedding.py",
+      "bytes": 20079,
+      "sha256": "b82657d52837f8ed8b798383578042a57be6f442c074639e245825cf6e2ab5d3"
+    },
+    {
+      "file": "src/scalarlens/_legacy/grouped_lookup.py",
+      "bytes": 924,
+      "sha256": "df6ebe49a634526d05f2fc5f4338d93594e20cceabfe308508e33ff8cbcfe3d7"
+    },
+    {
+      "file": "src/scalarlens/_legacy/numerical_embeddings.py",
+      "bytes": 301096,
+      "sha256": "540230e3fbbedf71eb4689ae87af413fa50c330305df5ebffe35c0f17a67d382"
+    },
+    {
+      "file": "src/scalarlens/_legacy/story_controls.py",
+      "bytes": 7864,
+      "sha256": "511549c8967945a77e14d9f0b81b7afab77887e8ed4a996417e59657ffc5c273"
+    },
+    {
+      "file": "src/scalarlens/assets/paper.yaml",
+      "bytes": 12239,
+      "sha256": "3b8bea1386baa0134751d64c40d6563f209a65121d89677f9cbc040f6de2475a"
+    },
+    {
+      "file": "src/scalarlens/backbones/__init__.py",
+      "bytes": 409,
+      "sha256": "03775f7f0be1d204909089e664ef31f2a5aac54b903baad4827b926050db0fde"
+    },
+    {
+      "file": "src/scalarlens/backbones/autoint.py",
+      "bytes": 9024,
+      "sha256": "fdde3cc7f0d0b482bdc5d17967cf48f28f5d8b85babe9d71e6d45960c998cd9e"
+    },
+    {
+      "file": "src/scalarlens/backbones/dcn.py",
+      "bytes": 4714,
+      "sha256": "f6d4e6a937c5e4cac6055c7b988cd2ed1c7720facff52d4bc9ecaf9e87037371"
+    },
+    {
+      "file": "src/scalarlens/backbones/dcnv2.py",
+      "bytes": 6970,
+      "sha256": "78fc7d1c4f129dcbb750e410e53e075a646cacf5462ebd186ce0cf687418f4a9"
+    },
+    {
+      "file": "src/scalarlens/backbones/deepfm.py",
+      "bytes": 4295,
+      "sha256": "4f1a1a5d08782b79463fc7db8542b661a648ceb93a486a802ca2abf52cc6a05e"
+    },
+    {
+      "file": "src/scalarlens/backbones/dnn.py",
+      "bytes": 3902,
+      "sha256": "80f0d8f4d81d61ae37aee552b8476fc26b78b88dd212e3dad1435b441fa0b8da"
+    },
+    {
+      "file": "src/scalarlens/backbones/fibinet.py",
+      "bytes": 5500,
+      "sha256": "49c17f44d5db619476838dcefd4494b44dd48f1617f96bc81d03172b8ed400d5"
+    },
+    {
+      "file": "src/scalarlens/backbones/nfm.py",
+      "bytes": 4495,
+      "sha256": "476670429541fd58fad8aa9971471a88d47162dd6de491402d119fdb9df7946d"
+    },
+    {
+      "file": "src/scalarlens/backbones/pnn.py",
+      "bytes": 4524,
+      "sha256": "2498e4c822808f145c2c505442f29bb729947f26755bc767979d37a37334b0d1"
+    },
+    {
+      "file": "src/scalarlens/backbones/widedeep.py",
+      "bytes": 4314,
+      "sha256": "a1f67645b7d43503c070f492fd444c7ea45081c61c4fe555a47d0e3fca394647"
+    },
+    {
+      "file": "src/scalarlens/benchmark.py",
+      "bytes": 5941,
+      "sha256": "2ee6c52cc22402ac46689c768c49883211cd1fae53cfa4a2210207a710e3db00"
+    },
+    {
+      "file": "src/scalarlens/coordinates.py",
+      "bytes": 8719,
+      "sha256": "55f37b40604b186c96954bcdc5904bb9cec48a7d359d411277791a28801813ff"
+    },
+    {
+      "file": "src/scalarlens/data/__init__.py",
+      "bytes": 156,
+      "sha256": "30c27cd9b948ff57ff58ec05d8e7cf1e2ebfc6ae6db5bcbf7dc3246301d99b6b"
+    },
+    {
+      "file": "src/scalarlens/data/__main__.py",
+      "bytes": 69,
+      "sha256": "46b3f7a7146a35ce2d2fec049968a637a678ae45981ac98063638aca654fe88f"
+    },
+    {
+      "file": "src/scalarlens/data/_validation.py",
+      "bytes": 4755,
+      "sha256": "01b0986a7feb389706aa110c3c54992f8d2f20a4ad90955e934427eafb191813"
+    },
+    {
+      "file": "src/scalarlens/data/automl.py",
+      "bytes": 21882,
+      "sha256": "21af05141f595d7e998169f85dea1158406cca43e862b31b196e23c693006338"
+    },
+    {
+      "file": "src/scalarlens/data/criteo_raw.py",
+      "bytes": 12178,
+      "sha256": "6e38b280ff6225986e96663ad4d21ea21576057291eb99f10083f2288b249574"
+    },
+    {
+      "file": "src/scalarlens/data/criteo_reference.py",
+      "bytes": 14843,
+      "sha256": "d9bf8608221a9a03d09464a40f6301ba2ad058495209466fe5e51a2ee372b9d8"
+    },
+    {
+      "file": "src/scalarlens/deer_engineering.py",
+      "bytes": 4747,
+      "sha256": "c5873c1bd78c383e15ccf1e6dccca785170f3bd2314387ce3bc9cde7a6980bd9"
+    },
+    {
+      "file": "src/scalarlens/deer_triton_engineering.py",
+      "bytes": 6702,
+      "sha256": "8298ee41cd8a9a9f3ccc6b493e06c634174efe8df7d129eb6163c83d795ae939"
+    },
+    {
+      "file": "src/scalarlens/embedding.py",
+      "bytes": 16147,
+      "sha256": "2bdb17437094b2cd54c2e5b2aa40c9ae4f08f96df67fff88faac96a9242b6486"
+    },
+    {
+      "file": "src/scalarlens/factory.py",
+      "bytes": 2592,
+      "sha256": "d4f39eeee50ab97c6e1f88e52224d133966e7cf3b7faf9a6b4aad40f1d9c500c"
+    },
+    {
+      "file": "src/scalarlens/matrix.py",
+      "bytes": 4804,
+      "sha256": "7f45f03689cc6d3b3c58533481514ba7e13208c1779192eb4cd68daf8af4cbb8"
+    },
+    {
+      "file": "src/scalarlens/plugin.py",
+      "bytes": 335,
+      "sha256": "716f0b2564823df1ec0534f497ad815aef4a4948380ccdf403925c04e0656ab0"
+    },
+    {
+      "file": "src/scalarlens/protocol.py",
+      "bytes": 1462,
+      "sha256": "161ce0da8413ac8659e96fcee1773d5123c989d67d9c14580651619b6aa74049"
+    },
+    {
+      "file": "src/scalarlens/results.py",
+      "bytes": 12353,
+      "sha256": "556645823b89a48da7d37da2dbb6c47c65ff8d952ee86cb57d104e77e3c29793"
+    },
+    {
+      "file": "src/scalarlens/runtime.py",
+      "bytes": 7956,
+      "sha256": "b65129554681a3ff4ad38c2e92e64b6baf775c333711c37b2c4ab474692204c3"
+    },
+    {
+      "file": "src/scalarlens/train.py",
+      "bytes": 6052,
+      "sha256": "af9e1eb1bb8ca121f8425ed37ceeb715bf8cac1d1de21f6688ecaaa176e301d9"
+    },
+    {
+      "file": "tests/test_reproduction.py",
+      "bytes": 9154,
+      "sha256": "df69bdde6efbca9b36e492198dd9620a28ff533bcf075c680cb7a852ca0d1cee"
+    }
+  ],
+  "file_count": 119,
+  "scope": "Explicit source/documentation/reproduction allowlist; no generated outputs"
+}

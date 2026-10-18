@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "public_files": 116,
+  "third_party_imports": [
+    "h5py",
+    "keras_preprocessing",
+    "numpy",
+    "pandas",
+    "polars",
+    "pyarrow",
+    "pytest",
+    "rtdl_num_embeddings",
+    "sklearn",
+    "tomli",
+    "torch",
+    "tqdm",
+    "triton",
+    "yaml"
+  ],
+  "undeclared": [],
+  "unavailable_required": [],
+  "errors": [],
+  "optional_triton_available": false
+}

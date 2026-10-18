@@ -1,0 +1,6 @@
+include README.md NOTICE LICENSE requirements.txt
+recursive-include src/scalarlens/assets *.yaml
+recursive-include reproduction *.md *.csv *.json *.tex *.txt
+recursive-include tests *.py
+recursive-include scripts *.py
+global-exclude .DS_Store ._* *.pyc

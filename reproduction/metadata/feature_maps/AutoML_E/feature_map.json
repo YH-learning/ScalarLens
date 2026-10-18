@@ -1,0 +1,401 @@
+{
+  "dataset_id": "AutoML_E",
+  "num_fields": 31,
+  "total_features": 118451,
+  "input_length": 31,
+  "labels": [
+    "Label"
+  ],
+  "features": [
+    {
+      "I1": {
+        "source": "dense",
+        "type": "numeric",
+        "numeric_pre_transform": "identity",
+        "numeric_missing_value": 0.0,
+        "numeric_storage_dtype": "float32",
+        "numeric_mean": 22192.49260334034,
+        "numeric_std": 38171.39402344258,
+        "numeric_min": -310000.0,
+        "numeric_max": 756500.0,
+        "numeric_bin_edges": [
+          -310000.0,
+          -6000.0,
+          -2001.0,
+          200.0,
+          3000.0,
+          5000.0,
+          6000.0,
+          8000.0,
+          10000.0,
+          13000.0,
+          15000.0,
+          21000.0,
+          31500.0,
+          43000.0,
+          55000.0,
+          75560.0,
+          756500.0
+        ]
+      }
+    },
+    {
+      "C1": {
+        "source": "sparse",
+        "type": "categorical",
+        "padding_idx": 0,
+        "vocab_size": 21
+      }
+    },
+    {
+      "C2": {
+        "source": "sparse",
+        "type": "categorical",
+        "padding_idx": 0,
+        "vocab_size": 82
+      }
+    },
+    {
+      "C3": {
+        "source": "sparse",
+        "type": "categorical",
+        "padding_idx": 0,
+        "vocab_size": 51
+      }
+    },
+    {
+      "C4": {
+        "source": "sparse",
+        "type": "categorical",
+        "padding_idx": 0,
+        "vocab_size": 442
+      }
+    },
+    {
+      "I2": {
+        "source": "dense",
+        "type": "numeric",
+        "numeric_pre_transform": "identity",
+        "numeric_missing_value": 0.0,
+        "numeric_storage_dtype": "float32",
+        "numeric_mean": 183359.7895138626,
+        "numeric_std": 231225.63657736967,
+        "numeric_min": 20746.0,
+        "numeric_max": 14625000.0,
+        "numeric_bin_edges": [
+          20746.0,
+          48900.0,
+          53900.0,
+          62600.0,
+          70800.0,
+          78900.0,
+          88800.0,
+          100900.0,
+          117800.0,
+          143800.0,
+          173800.0,
+          202800.0,
+          230160.0,
+          267300.0,
+          315376.0,
+          419800.0,
+          14625000.0
+        ]
+      }
+    },
+    {
+      "I3": {
+        "source": "dense",
+        "type": "numeric",
+        "numeric_pre_transform": "identity",
+        "numeric_missing_value": 0.0,
+        "numeric_storage_dtype": "float32",
+        "numeric_mean": 4921.418102312849,
+        "numeric_std": 9497.924643600298,
+        "numeric_min": -1000.0,
+        "numeric_max": 87179.0,
+        "numeric_bin_edges": [
+          -1000.0,
+          -830.0,
+          -621.0,
+          -414.0,
+          -160.0,
+          87.4375,
+          450.0,
+          932.625,
+          1664.0,
+          2130.0,
+          2889.0,
+          3792.0,
+          5724.0,
+          7915.0,
+          12326.0,
+          20569.0,
+          87179.0
+        ]
+      }
+    },
+    {
+      "C5": {
+        "source": "sparse",
+        "type": "categorical",
+        "padding_idx": 0,
+        "vocab_size": 3196
+      }
+    },
+    {
+      "C6": {
+        "source": "sparse",
+        "type": "categorical",
+        "padding_idx": 0,
+        "vocab_size": 51
+      }
+    },
+    {
+      "C7": {
+        "source": "sparse",
+        "type": "categorical",
+        "padding_idx": 0,
+        "vocab_size": 3198
+      }
+    },
+    {
+      "C8": {
+        "source": "sparse",
+        "type": "categorical",
+        "padding_idx": 0,
+        "vocab_size": 442
+      }
+    },
+    {
+      "I4": {
+        "source": "dense",
+        "type": "numeric",
+        "numeric_pre_transform": "identity",
+        "numeric_missing_value": 0.0,
+        "numeric_storage_dtype": "float32",
+        "numeric_mean": 8.510761886659191,
+        "numeric_std": 0.7259677238731249,
+        "numeric_min": 3.700000047683716,
+        "numeric_max": 11.399999618530273,
+        "numeric_bin_edges": [
+          3.700000047683716,
+          7.5,
+          7.699999809265137,
+          7.800000190734863,
+          8.0,
+          8.100000381469727,
+          8.199999809265137,
+          8.399999618530273,
+          8.5,
+          8.600000381469727,
+          8.699999809265137,
+          8.899999618530273,
+          9.0,
+          9.199999809265137,
+          9.399999618530273,
+          9.699999809265137,
+          11.399999618530273
+        ]
+      }
+    },
+    {
+      "I5": {
+        "source": "dense",
+        "type": "numeric",
+        "numeric_pre_transform": "identity",
+        "numeric_missing_value": 0.0,
+        "numeric_storage_dtype": "float32",
+        "numeric_mean": 26.498913713262745,
+        "numeric_std": 38.528148615187995,
+        "numeric_min": 0.0,
+        "numeric_max": 517.0,
+        "numeric_bin_edges": [
+          0.0,
+          1.0,
+          3.0,
+          4.0,
+          6.0,
+          9.0,
+          13.0,
+          17.0,
+          21.0,
+          26.0,
+          35.0,
+          44.0,
+          61.0,
+          95.0,
+          517.0
+        ]
+      }
+    },
+    {
+      "I6": {
+        "source": "dense",
+        "type": "numeric",
+        "numeric_pre_transform": "identity",
+        "numeric_missing_value": 0.0,
+        "numeric_storage_dtype": "float32",
+        "numeric_mean": 215552.28211720294,
+        "numeric_std": 252404.36075503821,
+        "numeric_min": 27900.0,
+        "numeric_max": 14625000.0,
+        "numeric_bin_edges": [
+          27900.0,
+          60700.0,
+          69900.0,
+          76900.0,
+          86700.0,
+          95900.0,
+          104800.0,
+          117800.0,
+          134900.0,
+          167800.0,
+          208900.0,
+          246000.0,
+          276700.0,
+          311800.0,
+          379800.0,
+          488000.0,
+          14625000.0
+        ]
+      }
+    },
+    {
+      "C9": {
+        "source": "sparse",
+        "type": "categorical",
+        "padding_idx": 0,
+        "vocab_size": 68270
+      }
+    },
+    {
+      "C10": {
+        "source": "sparse",
+        "type": "categorical",
+        "padding_idx": 0,
+        "vocab_size": 38724
+      }
+    },
+    {
+      "C11": {
+        "source": "sparse",
+        "type": "categorical",
+        "padding_idx": 0,
+        "vocab_size": 21
+      }
+    },
+    {
+      "C12": {
+        "source": "sparse",
+        "type": "categorical",
+        "padding_idx": 0,
+        "vocab_size": 800
+      }
+    },
+    {
+      "C13": {
+        "source": "sparse",
+        "type": "categorical",
+        "padding_idx": 0,
+        "vocab_size": 7
+      }
+    },
+    {
+      "C14": {
+        "source": "sparse",
+        "type": "categorical",
+        "padding_idx": 0,
+        "vocab_size": 927
+      }
+    },
+    {
+      "C15": {
+        "source": "sparse",
+        "type": "categorical",
+        "padding_idx": 0,
+        "vocab_size": 2
+      }
+    },
+    {
+      "C16": {
+        "source": "sparse",
+        "type": "categorical",
+        "padding_idx": 0,
+        "vocab_size": 5
+      }
+    },
+    {
+      "C17": {
+        "source": "sparse",
+        "type": "categorical",
+        "padding_idx": 0,
+        "vocab_size": 11
+      }
+    },
+    {
+      "C18": {
+        "source": "sparse",
+        "type": "categorical",
+        "padding_idx": 0,
+        "vocab_size": 51
+      }
+    },
+    {
+      "C19": {
+        "source": "sparse",
+        "type": "categorical",
+        "padding_idx": 0,
+        "vocab_size": 442
+      }
+    },
+    {
+      "C20": {
+        "source": "sparse",
+        "type": "categorical",
+        "padding_idx": 0,
+        "vocab_size": 51
+      }
+    },
+    {
+      "C21": {
+        "source": "sparse",
+        "type": "categorical",
+        "padding_idx": 0,
+        "vocab_size": 440
+      }
+    },
+    {
+      "C22": {
+        "source": "sparse",
+        "type": "categorical",
+        "padding_idx": 0,
+        "vocab_size": 50
+      }
+    },
+    {
+      "C23": {
+        "source": "sparse",
+        "type": "categorical",
+        "padding_idx": 0,
+        "vocab_size": 50
+      }
+    },
+    {
+      "C24": {
+        "source": "sparse",
+        "type": "categorical",
+        "padding_idx": 0,
+        "vocab_size": 1106
+      }
+    },
+    {
+      "C25": {
+        "source": "sparse",
+        "type": "categorical",
+        "padding_idx": 0,
+        "vocab_size": 5
+      }
+    }
+  ]
+}
