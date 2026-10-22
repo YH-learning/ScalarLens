@@ -76,7 +76,9 @@ def main():
         report['error'] = repr(exc)
     finally:
         report['elapsed_seconds'] = time.monotonic()-began
-        report['paper_audit'] = json.loads((ROOT/'outputs/paper/verification.json').read_text())
+        paper_audit = ROOT/'outputs/paper'/'verification.json'
+        if paper_audit.exists():
+            report['paper_audit'] = json.loads(paper_audit.read_text())
         (output/'report.json').write_text(json.dumps(report, indent=2)+'\n')
         lines = ['# Source verification', '',
                  'Scope: encoder refactoring, integration, synthetic CPU training, and archived statistics. Not full real-data retraining or GPU speed verification.',

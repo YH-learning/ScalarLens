@@ -6,7 +6,7 @@ __pycache__/
 build/
 dist/
 outputs/
-datasets/
+/datasets/
 *.parquet
 *.log
 .env

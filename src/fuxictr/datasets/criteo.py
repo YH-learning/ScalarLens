@@ -1,0 +1,45 @@
+# =========================================================================
+# Copyright (C) 2024. The FuxiCTR Library. All rights reserved.
+# Copyright (C) 2022. Huawei Technologies Co., Ltd. All rights reserved.
+# 
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+# =========================================================================
+
+
+import numpy as np
+from fuxictr.preprocess import FeatureProcessor
+import polars as pl
+
+
+class CustomizedFeatureProcessor(FeatureProcessor):
+    """Criteo dataset feature processor with log-squared bucketing."""
+
+    def convert_to_bucket(self, col_name):
+        """Apply a log-squared bucketing transform to a numeric column.
+
+        Values greater than 2 are mapped to ``int(floor(log(value)**2))``;
+        smaller values are truncated to integers.
+
+        Args:
+            col_name (str): Name of the column to transform.
+
+        Returns:
+            pl.Expr: Polars expression applying the bucket transform.
+        """
+        return (
+            pl.when(pl.col(col_name) > 2)
+            .then(pl.col(col_name).log().pow(2).floor())
+            .otherwise(pl.col(col_name))
+            .cast(pl.Int32)
+        )
+
